@@ -50,7 +50,7 @@ npm install
 
 # License
 
-Copyright 2023 Square, Inc.
+Copyright 2024 Square, Inc.
 ​
 
 ```
