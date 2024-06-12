@@ -19,7 +19,7 @@ dotnet add package Square
 1. At the top of the page, set the dashboard mode to the environment that you want to work with by choosing **Sandbox** or **Production**.
 1. Choose **OAuth** in the left navigation pane. The OAuth page is shown.
 1. In the **Redirect URL** box, enter the URL for the callback you will implement to complete the OAuth flow:
-   `http://localhost:5218/callback`
+   `http://localhost:5218/square/callback`
 
    You can use HTTP for localhost but an actual web server implementation must use HTTPS.
 

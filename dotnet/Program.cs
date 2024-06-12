@@ -32,7 +32,7 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
-app.MapGet("/authorize", async context =>
+app.MapGet("/square/authorize", async context =>
 {
     var configuration = context.RequestServices.GetRequiredService<Microsoft.Extensions.Configuration.IConfiguration>();
     var applicationId = configuration["Square:ApplicationId"];
@@ -46,7 +46,7 @@ app.MapGet("/authorize", async context =>
     context.Response.Redirect(authorizationUrl);
 });
 
-app.MapGet("/callback", async context =>
+app.MapGet("/square/callback", async context =>
 {
     var request = context.Request;
     var code = request.Query["code"];
