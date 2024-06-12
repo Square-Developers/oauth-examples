@@ -1,0 +1,25 @@
+@page
+@model CallbackModel
+@{
+    ViewData["Title"] = "OAuth Callback";
+}
+
+ <link type="text/css" rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width">
+    <div class="wrapper">
+      <div class="messages">
+        <h1>Authorization Succeeded</h1>
+          <div style='color:rgba(204, 0, 35, 1)'><strong>Caution:</strong> NEVER store or share OAuth access tokens or refresh tokens in clear text.
+                Use a strong encryption standard such as AES to encrypt OAuth tokens. Ensure the production encryption key is not
+                accessible to anyone who does not need it.
+          </div>
+          <br/>
+          <div><strong>OAuth access token:</strong>@Model.AccessToken </div>
+          <div><strong>OAuth access token expires at:</strong> @Model.ExpiresAt </div>
+          <div><strong>OAuth refresh token:</strong> @Model.RefreshToken </div>
+          <div><strong>Merchant Id:</strong> @Model.MerchantId </div>
+          <div><p>You can use this OAuth access token to call Create Payment and other APIs that were authorized by this seller.</p>
+          <p>Try it out with <a href='https://developer.squareup.com/explorer/square/payments-api/create-payment' target='_blank'>API Explorer</a>.</p>
+        </div>
+    </div>
+  </div>
