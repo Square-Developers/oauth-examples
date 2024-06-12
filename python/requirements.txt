@@ -1,0 +1,3 @@
+flask
+squareup==33.0.0.20231115
+python-dotenv

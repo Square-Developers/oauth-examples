@@ -1,0 +1,49 @@
+@import url(https://square-fonts-production-f.squarecdn.com/square-sans.min.css);
+
+html {
+	color: #151c1f;
+	font-family: var(--square-sans-text);
+	font-size: 16px;
+	line-height: 24px;
+	-webkit-font-smoothing: antialiased
+}
+
+h1 {
+  color: rgba(0, 95, 229, 1);
+}
+
+a {
+  color: rgba(0, 106, 255, 1);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(0, 95, 229, 1);
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.messages {
+  max-width: 700px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.btn {
+  background-color: rgba(0, 106, 255, 1);
+  color: white;
+  border-radius: 6px;
+  padding: 20px 16px 20px 16px;
+  transition: background-color .2s ease, color .2s ease;
+}
+
+.btn:hover {
+  background-color: rgba(0, 85, 204, 1);
+  color: white;
+}
