@@ -32,8 +32,21 @@ On your application dashboard, set your application's Redirect URL to
 Note that applications that don't use a `localhost` URL must use HTTPS. HTTP is
 allowed for `localhost` URLs to simplify the development process.
 
-### Specify your application credentials
+### Set the Square Java SDK Version
+First you need to set the version of the Square dependency in `pom.xml`. Find the line that says `REPLACE_ME` and input the latest square version for java. The latest version number can be found [here](https://developer.squareup.com/docs/sdks/java)
 
+Example - Setting the Square Java SDK version to `40.1.1.20240717`
+```
+<version>REPLACE_ME</version>
+```
+would be 
+
+```
+<version>40.1.1.20240717</version>
+```
+
+
+### Specify your application credentials
 In order for the sample to work, you must specify the following fields in `OAuthHandler.java`:
 
 - Set the value of `ENVIRONMENT` to one of `Environment.SANDBOX`, `Environment.PRODUCTION` or `Environment.CUSTOM`
