@@ -7,6 +7,7 @@ For more information, see [OAuth Overview](https://developer.squareup.com/docs/o
 ## Setup
 
 ### Install Square SDK and Sinatra
+First, edit the `Gemfile` to insert your desired Ruby SDK version. Latest version can be found [here](https://developer.squareup.com/docs/sdks/ruby)
 
 This application requires gems for the Sinatra web framework and Square Connect. Install them with `bundle install`
 
