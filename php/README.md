@@ -16,17 +16,19 @@ along with the comments included in `sandbox_callback.php`.
 
 ### Step 1: Download Composer and dependencies
 
-This application requires the PHP Square SDK as well as DotEnv for reading environment variables, which you install via
-Composer.
+This application requires the PHP Square SDK as well as DotEnv for reading environment variables, which you install via Composer.
 
 First, download Composer in this directory with the instructions on
 [this page](https://getcomposer.org/download/).
 
-After you've downloaded Composer, install the dependencies with the following
+After you've downloaded Composer, update your Square PHP SDK version in `composer.json` - change `REPLACE_ME` to your desired version number. Latest version can be found [here](https://developer.squareup.com/docs/sdks/php)
+
+
+install the dependencies with the following
 command from this directory:
 
 ```
-php composer.phar install
+composer install
 ```
 
 ### Step 2: Get your credentials and set the redirect URL:
